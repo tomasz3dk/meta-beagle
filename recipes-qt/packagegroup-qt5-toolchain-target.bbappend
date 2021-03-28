@@ -1,0 +1,1 @@
+RDEPENDS_${PN}_remove += " qtlocation-dev qtlocation-mkspecs qtlocation-plugins qtlocation-qmlplugins"
