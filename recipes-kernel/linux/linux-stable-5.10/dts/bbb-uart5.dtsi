@@ -1,10 +1,3 @@
-/*
- * Copyright (C) 2020 Jumpnow Technologies, LLC - http://jumpnowtek.com
- *
- * This program is free software; you can redistribute it and/or modify
- * it under the terms of the GNU General Public License version 2 as
- * published by the Free Software Foundation.
- */
 
 &am33xx_pinmux {
 	uart5_pins: uart5_pins {
