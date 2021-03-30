@@ -42,4 +42,12 @@ SRC_URI = " \
     file://bbb-chipsee-keypad.dtsi;subdir=git/arch/arm/boot/dts \
     \
     file://beagle-chipsee.dts;subdir=git/arch/arm/boot/dts \
+    file://logo_linux_clut224.ppm \
 "
+
+do_configure_prepend() {
+    # logo support, if you supply logo_linux_clut224.ppm in SRC_URI, then it's going to be used
+    if [ -e ${WORKDIR}/logo_linux_clut224.ppm ]; then
+        install -m 0644 ${WORKDIR}/logo_linux_clut224.ppm ${S}/drivers/video/logo/logo_linux_clut224.ppm
+    fi
+}
